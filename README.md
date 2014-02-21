@@ -30,6 +30,33 @@ Features
     - Humidity (on, off, %)
     - Turn off HVAC
 
+
+
+Setup
+------
+Rename `credentials.php.example` to `credentials.php`
+
+Then add your credentials
+
+    // Your Nest username and password.
+    define('USERNAME', 'you@gmail.com');
+    define('PASSWORD', 'Something other than 1234 right?');
+
+Web Service Usage
+-----
+
+The api will be accessible by calling `<path>/nest/<method>`
+
+The api will list its capabilities by calling `<your path>/nest/api`
+This will return a JSON object with available methods listed under the HTTP method that must be used to call them
+
+..Note: Currently only the GET methods are supported..
+
+For example, to get the device info you would make a GET request to:
+
+`<your path>/nest/deviceinfo`
+
+
 Usage
 -----
 
