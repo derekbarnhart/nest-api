@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^nest/([^/\.]+)?$ index.php?method=$1 [L]
